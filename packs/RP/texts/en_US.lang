@@ -1,2 +1,5 @@
 item.more_pearl:blindness_pearl.name=Blindness Pearl
 entity.more_pearl:blindness_pearl.name=Blindness Pearl
+
+item.more_pearl:slowness_pearl.name=Slowness Pearl
+entity.more_pearl:slowness_pearl.name=Slowness Pearl
