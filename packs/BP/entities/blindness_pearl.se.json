@@ -13,11 +13,6 @@
       "minecraft:projectile": {
         "on_hit": {
           "teleport_owner": false,
-          "spawn_chance": {
-            "first_spawn_percent_chance": 5.0,
-            "first_spawn_count": 1,
-            "spawn_definition": "minecraft:endermite"
-          },
           "remove_on_hit": {}
         },
         "power": 1.5,
