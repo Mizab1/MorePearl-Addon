@@ -6,6 +6,8 @@ export default {
     PEARL_ID: "more_pearl:blindness_pearl",
     IMPACT_DISTANT: 15,
     EFFECT_TIME: TicksPerSecond * 5,
+    EFFECT_NAME: MinecraftEffectTypes.Blindness,
+    PARTICLE_NAME: "more_pearl:blindness_particle",
   },
 
   SLOWNESS_PEARL: {

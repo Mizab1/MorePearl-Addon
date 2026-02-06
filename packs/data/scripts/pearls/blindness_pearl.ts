@@ -25,7 +25,7 @@ export class BlindnessPearl {
           y: ray.block.location.y + 2,
           z: ray.block.location.z,
         };
-        pearl.dimension.spawnParticle("more_pearl:blindness_particle", particleLocation);
+        pearl.dimension.spawnParticle(constants.BLINDNESS_PEARL.PARTICLE_NAME, particleLocation);
 
         // Give blindness
         pearl.dimension
@@ -34,7 +34,7 @@ export class BlindnessPearl {
             maxDistance: constants.BLINDNESS_PEARL.IMPACT_DISTANT,
           })
           .forEach((player) => {
-            player.addEffect(MinecraftEffectTypes.Blindness, constants.BLINDNESS_PEARL.EFFECT_TIME);
+            player.addEffect(constants.BLINDNESS_PEARL.EFFECT_NAME, constants.BLINDNESS_PEARL.EFFECT_TIME);
           });
 
         // Teleport the owner
