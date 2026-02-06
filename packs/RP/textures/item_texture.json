@@ -5,6 +5,9 @@
     },
     "more_pearl:slowness_pearl": {
       "textures": "textures/items/slowness_pearl"
+    },
+    "more_pearl:gravity_pearl": {
+      "textures": "textures/items/gravity_pearl"
     }
   }
 }

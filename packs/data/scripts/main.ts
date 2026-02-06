@@ -1,14 +1,17 @@
 import { system, world } from "@minecraft/server";
 import constants from "./constants";
-import { BlindnessPearl } from "./pearls/blindness_pearl";
-import { SlownessPearl } from "./pearls/slowness_pearl";
+import { BlindnessPearl } from "./pearls/blindnessPearl";
+import { SlownessPearl } from "./pearls/slownessPearl";
+import { GravityPearl } from "./pearls/gravityPearl";
 
 const blindnessPearl = new BlindnessPearl();
 const slownessPearl = new SlownessPearl();
+const gravityPearl = new GravityPearl();
 
 system.runInterval(() => {
   blindnessPearl.tick();
   slownessPearl.tick();
+  gravityPearl.tick();
 }, 1);
 
 world.afterEvents.entitySpawn.subscribe((event) => {
