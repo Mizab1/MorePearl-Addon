@@ -1,5 +1,5 @@
 import { Entity, world } from "@minecraft/server";
-import { MinecraftDimensionTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
+import { MinecraftDimensionTypes } from "@minecraft/vanilla-data";
 import constants from "../constants";
 import { setOwner, teleportOwner } from "../utils/pearlUtils";
 
