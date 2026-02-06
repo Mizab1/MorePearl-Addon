@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Adds more ender pearls to the game",
+    "name": "More Pearls",
+    "uuid": "17a28297-4138-4f39-8c9c-8e773af4d8f7",
+    "min_engine_version": [1, 21, 114],
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "3651b436-cf2e-4776-be73-7a2e93570a3a",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "uuid": "5649b4e4-423a-4ff3-bc95-60a12b0718fa",
+      "version": [1, 0, 0],
+      "language": "javascript",
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.3.0"
+    }
+  ]
+}

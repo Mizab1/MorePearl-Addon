@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.6.json",
+  "author": "Mizab",
+  "name": "More Pearl",
+  "packs": {
+    "behaviorPack": "./packs/BP",
+    "resourcePack": "./packs/RP"
+  },
+  "regolith": {
+    "dataPath": "./packs/data",
+    "filterDefinitions": {
+      "bump_manifest": {
+        "url": "github.com/Bedrock-OSS/regolith-filters",
+        "version": "1.1.1"
+      },
+      "esbuild": {
+        "url": "github.com/ink0rr/regolith-filters",
+        "version": "0.3.1"
+      },
+      "link_manifests": {
+        "url": "github.com/Hatchibombotar/useful-regolith-filters",
+        "version": "0.0.2"
+      },
+      "pack_anything": {
+        "url": "github.com/Nusiq/regolith-filters",
+        "version": "1.1.1"
+      }
+    },
+    "formatVersion": "1.6.0",
+    "profiles": {
+      "default": {
+        "export": {
+          "build": "standard",
+          "readOnly": false,
+          "target": "development"
+        },
+        "filters": [
+          {
+            "filter": "esbuild",
+            "settings": {
+              "bundle": true,
+              "entryPoints": ["./data/scripts/main.ts"],
+              "external": ["@minecraft/server"],
+              "format": "esm",
+              "outfile": "./BP/scripts/main.js"
+            }
+          }
+        ]
+      },
+      "release": {
+        "export": {
+          "readOnly": false,
+          "target": "local"
+        },
+        "filters": [
+          {
+            "filter": "bump_manifest",
+            "settings": {
+              "bump": "patch",
+              "output": "source"
+            }
+          },
+          {
+            "filter": "esbuild",
+            "settings": {
+              "bundle": true,
+              "entryPoints": ["./data/scripts/main.ts"],
+              "external": ["@minecraft/server"],
+              "format": "esm",
+              "minify": true,
+              "outfile": "./BP/scripts/main.js"
+            }
+          },
+          {
+            "filter": "pack_anything",
+            "settings": {
+              "output": "./build/More Pearl.mcaddon",
+              "pathmap": {
+                "BP": "./BP",
+                "RP": "./RP"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

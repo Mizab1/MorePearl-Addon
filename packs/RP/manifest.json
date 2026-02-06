@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Adds more ender pearls to the game",
+    "name": "More Pearls",
+    "uuid": "270615e8-d26d-4547-a2ae-e2563ae34828",
+    "min_engine_version": [1, 21, 114],
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "4a4d9f7a-0525-48c5-838d-7a1526a17b81",
+      "version": [1, 0, 0]
+    }
+  ]
+}
