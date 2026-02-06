@@ -31,7 +31,7 @@ export class BlindnessPearl {
         pearl.dimension
           .getPlayers({
             location: pearl.location,
-            maxDistance: constants.BLINDNESS_PEARL.IMPACT_DISTANT,
+            maxDistance: constants.BLINDNESS_PEARL.IMPACT_DISTANCE,
           })
           .forEach((player) => {
             player.addEffect(constants.BLINDNESS_PEARL.EFFECT_NAME, constants.BLINDNESS_PEARL.EFFECT_TIME);

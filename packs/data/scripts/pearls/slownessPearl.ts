@@ -31,7 +31,7 @@ export class SlownessPearl {
         pearl.dimension
           .getEntities({
             location: pearl.location,
-            maxDistance: constants.SLOWNESS_PEARL.IMPACT_DISTANT,
+            maxDistance: constants.SLOWNESS_PEARL.IMPACT_DISTANCE,
           })
           .forEach((entity) => {
             entity.addEffect(constants.SLOWNESS_PEARL.EFFECT_NAME, constants.SLOWNESS_PEARL.EFFECT_TIME);
