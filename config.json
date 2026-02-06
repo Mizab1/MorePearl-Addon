@@ -44,6 +44,9 @@
               "format": "esm",
               "outfile": "./BP/scripts/main.js"
             }
+          },
+          {
+            "filter": "link_manifests"
           }
         ]
       },
