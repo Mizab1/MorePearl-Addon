@@ -40,8 +40,8 @@
             "settings": {
               "bundle": true,
               "entryPoints": ["./data/scripts/main.ts"],
-              "external": ["@minecraft/server"],
               "format": "esm",
+              "external": ["@minecraft/server", "@minecraft/server-ui"],
               "outfile": "./BP/scripts/main.js"
             }
           },
@@ -68,7 +68,7 @@
             "settings": {
               "bundle": true,
               "entryPoints": ["./data/scripts/main.ts"],
-              "external": ["@minecraft/server"],
+              "external": ["@minecraft/server", "@minecraft/server-ui"],
               "format": "esm",
               "minify": true,
               "outfile": "./BP/scripts/main.js"
