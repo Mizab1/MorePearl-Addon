@@ -20,7 +20,7 @@ export class GravityPearl extends BasePearl {
     const nearbyEntities: Entity[] = pearl.dimension.getEntities({
       location: pearl.location,
       maxDistance: constants.GRAVITY_PEARL.IMPACT_DISTANCE,
-      families: ["mob"],
+      excludeFamilies: ["inanimate"],
     });
     nearbyEntities.forEach((entity) => {
       const direction: Vector3 = {

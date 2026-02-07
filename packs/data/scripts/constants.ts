@@ -20,11 +20,11 @@ export default {
 
   GRAVITY_PEARL: {
     PEARL_ID: "more_pearl:gravity_pearl",
-    IMPACT_DISTANCE: 15,
+    IMPACT_DISTANCE: 8,
     STRENGTH: 0.2,
     PARTICLE_NAME: "more_pearl:gravity_particle",
   },
 
   // Global
-  BUFFER_DISTANCE: 2.1,
+  BUFFER_DISTANCE: 3,
 } as const;
