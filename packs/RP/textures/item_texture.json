@@ -8,6 +8,9 @@
     },
     "more_pearl:gravity_pearl": {
       "textures": "textures/items/gravity_pearl"
+    },
+    "more_pearl:swap_pearl": {
+      "textures": "textures/items/swap_pearl"
     }
   }
 }
