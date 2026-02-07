@@ -23,3 +23,11 @@ export function getOwnerEntity(pearl: Entity) {
   const owner = allPlayers.find((player) => player.id === ownerId);
   return owner;
 }
+
+export function getEntityById(contextEntity: Entity, id: string) {
+  if (contextEntity && id) {
+    const allEntities = contextEntity.dimension.getEntities();
+    const target = allEntities.find((e) => e.id === id);
+    return target;
+  }
+}

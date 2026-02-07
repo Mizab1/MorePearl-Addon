@@ -32,7 +32,15 @@ export default {
     PARTICLE_NAME: "more_pearl:swap_particle",
   },
 
+  TARGET_PEARL: {
+    PEARL_ID: "more_pearl:target_pearl",
+    MIN_DISTANCE: 1,
+    IMPACT_DISTANCE: 8,
+    PARTICLE_NAME: "more_pearl:swap_particle",
+  },
+
   // Global
   BUFFER_DISTANCE: 3,
   OWNER_TAG: "owner",
+  ATTACKED_TAG: "attacked",
 } as const;

@@ -1,4 +1,4 @@
-import { Entity, Vector3 } from "@minecraft/server";
+import { Entity, EntityHurtAfterEvent, Vector3 } from "@minecraft/server";
 import { setOwner } from "../utils/pearlUtils";
 
 export abstract class BasePearl {
@@ -27,6 +27,8 @@ export abstract class BasePearl {
   runAfterLaunch(pearl: Entity) {
     setOwner(pearl);
   }
+
+  hurtEntity(event: EntityHurtAfterEvent, attacker: Entity) {}
 
   protected abstract onImpact(pearl: Entity, impactLocation: Vector3): void;
 }

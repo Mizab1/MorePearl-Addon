@@ -9,3 +9,6 @@ entity.more_pearl:gravity_pearl.name=Gravity Pearl
 
 item.more_pearl:swap_pearl.name=Swap Pearl
 entity.more_pearl:swap_pearl.name=Swap Pearl
+
+item.more_pearl:target_pearl.name=Target Pearl
+entity.more_pearl:target_pearl.name=Target Pearl

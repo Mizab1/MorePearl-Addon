@@ -11,6 +11,9 @@
     },
     "more_pearl:swap_pearl": {
       "textures": "textures/items/swap_pearl"
+    },
+    "more_pearl:target_pearl": {
+      "textures": "textures/items/target_pearl"
     }
   }
 }
