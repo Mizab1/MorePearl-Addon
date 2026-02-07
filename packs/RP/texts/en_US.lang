@@ -4,8 +4,8 @@ entity.more_pearl:blindness_pearl.name=Blindness Pearl
 item.more_pearl:slowness_pearl.name=Slowness Pearl
 entity.more_pearl:slowness_pearl.name=Slowness Pearl
 
-item.more_pearl:gravity_pearl.name=Gravity Pearl
-entity.more_pearl:gravity_pearl.name=Gravity Pearl
+item.more_pearl:gravity_pearl.name=Vortex Pearl
+entity.more_pearl:gravity_pearl.name=Vortex Pearl
 
 item.more_pearl:swap_pearl.name=Swap Pearl
 entity.more_pearl:swap_pearl.name=Swap Pearl
