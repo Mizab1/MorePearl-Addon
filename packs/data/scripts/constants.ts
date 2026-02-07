@@ -25,6 +25,14 @@ export default {
     PARTICLE_NAME: "more_pearl:gravity_particle",
   },
 
+  SWAP_PEARL: {
+    PEARL_ID: "more_pearl:swap_pearl",
+    MIN_DISTANCE: 1,
+    IMPACT_DISTANCE: 8,
+    PARTICLE_NAME: "more_pearl:swap_particle",
+  },
+
   // Global
   BUFFER_DISTANCE: 3,
+  OWNER_TAG: "owner",
 } as const;

@@ -2,8 +2,9 @@ import { Entity, system, world } from "@minecraft/server";
 import { BlindnessPearl } from "./pearls/blindnessPearl";
 import { GravityPearl } from "./pearls/gravityPearl";
 import { SlownessPearl } from "./pearls/slownessPearl";
+import { SwapPearl } from "./pearls/swapPearl";
 
-const pearls = [new BlindnessPearl(), new SlownessPearl(), new GravityPearl()];
+const pearls = [new BlindnessPearl(), new SlownessPearl(), new GravityPearl(), new SwapPearl()];
 
 system.runInterval(() => {
   const activeDimensions = new Set(world.getAllPlayers().map((p) => p.dimension));
