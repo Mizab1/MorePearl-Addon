@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "more_pearl:gravity_pearl"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "minecraft:slime_ball"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:ender_pearl"
+      }
+    ],
+    "result": {
+      "item": "more_pearl:gravity_pearl"
+    }
+  }
+}
