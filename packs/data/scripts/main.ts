@@ -1,28 +1,27 @@
-import { system, world } from "@minecraft/server";
-import constants from "./constants";
+import { Entity, system, world } from "@minecraft/server";
 import { BlindnessPearl } from "./pearls/blindnessPearl";
-import { SlownessPearl } from "./pearls/slownessPearl";
 import { GravityPearl } from "./pearls/gravityPearl";
+import { SlownessPearl } from "./pearls/slownessPearl";
 
-const blindnessPearl = new BlindnessPearl();
-const slownessPearl = new SlownessPearl();
-const gravityPearl = new GravityPearl();
+const pearls = [new BlindnessPearl(), new SlownessPearl(), new GravityPearl()];
 
 system.runInterval(() => {
-  blindnessPearl.tick();
-  slownessPearl.tick();
-  gravityPearl.tick();
+  const activeDimensions = new Set(world.getAllPlayers().map((p) => p.dimension));
+
+  for (const dimension of activeDimensions) {
+    for (const pearlClass of pearls) {
+      const pearlEntities: Entity[] = dimension.getEntities({ type: pearlClass.typeId });
+      // Skip the current pearlClass since there is no pearl
+      if (pearlEntities.length === 0) continue;
+
+      pearlClass.tick(pearlEntities);
+    }
+  }
 }, 1);
 
 world.afterEvents.entitySpawn.subscribe((event) => {
-  const { entity: pearl } = event;
+  const { entity } = event;
 
-  switch (pearl.typeId) {
-    case constants.BLINDNESS_PEARL.PEARL_ID:
-      blindnessPearl.runAfterLaunch(pearl);
-      break;
-    case constants.SLOWNESS_PEARL.PEARL_ID:
-      slownessPearl.runAfterLaunch(pearl);
-      break;
-  }
+  const pearlLogic = pearls.find((p) => p.typeId === entity.typeId);
+  pearlLogic?.runAfterLaunch(entity);
 });
