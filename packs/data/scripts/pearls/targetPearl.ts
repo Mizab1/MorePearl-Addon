@@ -21,11 +21,18 @@ export class TargetPearl extends BasePearl {
     const owner = getOwnerEntity(pearl);
     const attackedEntityId = owner?.getDynamicProperty(constants.ATTACKED_TAG);
 
+    if (!attackedEntityId) {
+      owner?.sendMessage({ rawtext: [{ text: constants.COLOR.Red }, { translate: "generic.entity_not_found" }] });
+      return;
+    }
+
     if (owner && attackedEntityId) {
       const attackedEntity = getEntityById(owner, attackedEntityId as string);
 
       if (attackedEntity) {
         attackedEntity.teleport(pearl.location);
+        // Remove the tag
+        owner.setDynamicProperty(constants.ATTACKED_TAG, undefined);
       }
     }
   }
