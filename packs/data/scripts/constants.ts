@@ -13,14 +13,15 @@ export default {
   SLOWNESS_PEARL: {
     PEARL_ID: "more_pearl:slowness_pearl",
     IMPACT_DISTANCE: 15,
-    EFFECT_TIME: TicksPerSecond * 3,
+    EFFECT_TIME: TicksPerSecond * 4,
+    AMPLIFIER: 10,
     EFFECT_NAME: MinecraftEffectTypes.Slowness,
     PARTICLE_NAME: "more_pearl:slowness_particle",
   },
 
   GRAVITY_PEARL: {
     PEARL_ID: "more_pearl:gravity_pearl",
-    IMPACT_DISTANCE: 8,
+    IMPACT_DISTANCE: 10,
     STRENGTH: 0.2,
     PARTICLE_NAME: "more_pearl:gravity_particle",
   },

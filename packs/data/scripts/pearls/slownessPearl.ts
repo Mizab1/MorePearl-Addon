@@ -24,7 +24,9 @@ export class SlownessPearl extends BasePearl {
         maxDistance: constants.SLOWNESS_PEARL.IMPACT_DISTANCE,
       })
       .forEach((entity) => {
-        entity.addEffect(constants.SLOWNESS_PEARL.EFFECT_NAME, constants.SLOWNESS_PEARL.EFFECT_TIME);
+        entity.addEffect(constants.SLOWNESS_PEARL.EFFECT_NAME, constants.SLOWNESS_PEARL.EFFECT_TIME, {
+          amplifier: constants.SLOWNESS_PEARL.AMPLIFIER,
+        });
       });
 
     teleportOwner(pearl, impactLocation);

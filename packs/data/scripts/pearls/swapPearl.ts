@@ -30,7 +30,12 @@ export class SwapPearl extends BasePearl {
       closest: 1,
     })[0];
 
-    if (nearestEntity && ownerLocation && owner) {
+    if (!nearestEntity) {
+      owner?.sendMessage({ rawtext: [{ text: constants.COLOR.Red }, { translate: "generic.unable_to_swap" }] });
+      return;
+    }
+
+    if (ownerLocation && owner) {
       owner.teleport(pearlLocation);
       nearestEntity.teleport(ownerLocation);
     }

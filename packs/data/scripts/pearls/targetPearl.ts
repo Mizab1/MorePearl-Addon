@@ -26,7 +26,7 @@ export class TargetPearl extends BasePearl {
       return;
     }
 
-    if (owner && attackedEntityId) {
+    if (owner) {
       const attackedEntity = getEntityById(owner, attackedEntityId as string);
 
       if (attackedEntity) {

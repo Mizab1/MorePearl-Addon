@@ -13,4 +13,5 @@ entity.more_pearl:swap_pearl.name=Swap Pearl
 item.more_pearl:target_pearl.name=Target Pearl
 entity.more_pearl:target_pearl.name=Target Pearl
 
-generic.entity_not_found=Entity cannot teleported
+generic.entity_not_found=No Entity Selected
+generic.unable_to_swap=Cannot find an entity nearby
