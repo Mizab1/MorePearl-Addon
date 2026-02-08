@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.6.json",
   "author": "Mizab",
-  "name": "More Pearl",
+  "name": "More Pearls",
   "packs": {
     "behaviorPack": "./packs/BP",
     "resourcePack": "./packs/RP"
@@ -77,7 +77,7 @@
           {
             "filter": "pack_anything",
             "settings": {
-              "output": "./build/More Pearl.mcaddon",
+              "output": "./build/More Pearls.mcaddon",
               "pathmap": {
                 "BP": "./BP",
                 "RP": "./RP"
