@@ -41,4 +41,14 @@ export default {
   BUFFER_DISTANCE: 3,
   OWNER_TAG: "owner",
   ATTACKED_TAG: "attacked",
+
+  // Color
+  COLOR: {
+    Red: "\u00A7c",
+    Green: "\u00A7a",
+    Yellow: "\u00A7e",
+    White: "\u00A7f",
+    Bold: "\u00A7l",
+    Reset: "\u00A7r",
+  },
 } as const;
