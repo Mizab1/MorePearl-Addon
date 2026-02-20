@@ -83,6 +83,9 @@
                 "RP": "./RP"
               }
             }
+          },
+          {
+            "filter": "link_manifests"
           }
         ]
       }
