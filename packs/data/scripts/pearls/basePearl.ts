@@ -25,7 +25,7 @@ export abstract class BasePearl {
   }
 
   runAfterLaunch(pearl: Entity) {
-    if (pearl) setOwner(pearl);
+    if (pearl?.isValid) setOwner(pearl);
   }
 
   hurtEntity(event: EntityHurtAfterEvent, attacker: Entity) {}
