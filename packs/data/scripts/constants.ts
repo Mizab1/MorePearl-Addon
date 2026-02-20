@@ -4,7 +4,7 @@ import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
 export default {
   BLINDNESS_PEARL: {
     PEARL_ID: "more_pearl:blindness_pearl",
-    IMPACT_DISTANCE: 15,
+    IMPACT_DISTANCE: 10,
     EFFECT_TIME: TicksPerSecond * 5,
     EFFECT_NAME: MinecraftEffectTypes.Blindness,
     PARTICLE_NAME: "more_pearl:blindness_particle",
@@ -12,7 +12,7 @@ export default {
 
   SLOWNESS_PEARL: {
     PEARL_ID: "more_pearl:slowness_pearl",
-    IMPACT_DISTANCE: 15,
+    IMPACT_DISTANCE: 10,
     EFFECT_TIME: TicksPerSecond * 4,
     AMPLIFIER: 10,
     EFFECT_NAME: MinecraftEffectTypes.Slowness,
