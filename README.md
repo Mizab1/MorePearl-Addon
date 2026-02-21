@@ -9,6 +9,8 @@ Each pearl has a special ability that will trigger when it hits the ground, givi
 - Target Pearl: Strike a target on an entity to designate it as your target, and then throw the pearl. Instead of teleporting as usual, the targeted entity will teleport to the landing spot of the pearl. Great for separating enemies, pulling threats away, or mob positioning.
 - Vortex Pearl: When this pearl lands, it generates a strong vortex that attracts nearby entities towards its center. Great for gathering mobs together, managing battlefield positioning, or area attacks.
 
+You can see the gameplay of each of the pearl here: https://www.youtube.com/watch?v=bj04d6Ym1mc
+
 ### **How to Install:**
 1. Download the More Pearls.mcaddon file.
 2. Right-click on the file and open it with Minecraft Bedrock Edition.
