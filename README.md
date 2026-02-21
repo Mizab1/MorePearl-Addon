@@ -11,11 +11,9 @@ Each pearl has a special ability that will trigger when it hits the ground, givi
 
 You can see the gameplay of each of the pearl here: https://www.youtube.com/watch?v=bj04d6Ym1mc
 
-### **How to Install:**
-1. Download the More Pearls.mcaddon file.
-2. Right-click on the file and open it with Minecraft Bedrock Edition.
-3. The game will automatically install the addon for you.
-4. Crafting Recipes: The crafting recipes for all pearls are included in the images below. Check out the images to learn how to craft each pearl. NOTE: All of the crafting recipes are shapeless, meaning, they can be placed anywhere on the crafting table.
-
-### **Final Note:** 
-If you experience any bugs or problems while playing, don’t hesitate to contact me. I’ll be more than happy to check them out and optimize the addon!
+### **Tech/Tools Used:**
+1. Minecraft Script API and Typescript
+2. Custom Entities and Items
+3. Regolith Pipeline
+4. Snowstorm for creating particles
+5. Resource and Behavior pack
